@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .welcome-message {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-message">
+        ¡Bienvenido, <span id="user-name"></span>!
+    </div>
+    <script>
+        // Función para obtener el nombre completo del usuario
+        function getUserFullName() {
+            // Lógica para obtener el nombre del usuario
+            // Puedes reemplazar este valor con la lógica real para obtener el nombre del usuario
+            return "Nombre de Usuario";
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var userName = getUserFullName();
+            document.getElementById('user-name').textContent = userName;
+        });
+    </script>
+</body>
+</html>
